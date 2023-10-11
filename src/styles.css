@@ -1,0 +1,371 @@
+@import url("./fonts.css");
+@import url("./default.css");
+
+body {
+  font-family: "Muller";
+  font-weight: 400;
+}
+
+button {
+  padding: 16px 50px;
+  height: 60px;
+  width: 226px;
+  background-color: #e4ad50;
+  transition: background-color 0.2s;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-weight: 700;
+}
+button:disabled {
+  background-color: #a98e5d;
+}
+
+input {
+  margin-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+  height: 60px;
+  border-color: #a98f5e;
+  outline: none;
+  border: 1px solid #a98f5e;
+}
+input::placeholder {
+  color: #a98f5e;
+  font-size: inherit;
+}
+input:invalid {
+  border: 1px solid #a98f5e;
+}
+input:valid {
+  border: 1px solid #e4ad50;
+}
+button:hover {
+  background-color: #ffcb72;
+}
+
+.wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1240px;
+  @media screen and (max-width: 1240px) {
+    max-width: 100%;
+  }
+}
+.modal {
+  display: none;
+  position: fixed;
+  padding-top: 20px;
+  z-index: 9;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+}
+.modal__inner {
+  margin: auto;
+  width: 90%;
+}
+.modal__close {
+  position: absolute;
+  top: 8%;
+  right: 8%;
+  color: #000;
+  font-size: 32px;
+  font-weight: 800;
+  cursor: pointer;
+}
+.modal__image {
+  display: block;
+  width: 100%;
+  height: 95vh;
+}
+.main {
+  padding-bottom: 110px;
+}
+.header {
+  position: relative;
+  box-shadow: 0px 15px 10px -10px #f2f2f2;
+}
+.header__inner {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 12px;
+}
+.header__logo {
+  flex: 2 1 auto;
+}
+.header__logo-link {
+  display: flex;
+  align-items: center;
+}
+.header__logo-title {
+  padding-left: 10px;
+  color: #eac17b;
+  font-weight: 800;
+  font-size: 24px;
+}
+.navigation {
+  display: flex;
+  flex: 1 1 auto;
+  @media screen and (max-width: 640px) {
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: flex-end;
+  }
+}
+.navigation__item {
+  flex: 1 1 auto;
+}
+.navigation__link {
+  position: relative;
+  color: #97743d;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.navigation__link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-bottom: 1px solid transparent;
+  transition: border 0.2s;
+}
+.navigation__link:hover {
+  color: #e9b35d;
+}
+
+.navigation__link:hover::after {
+  border-bottom: 1px solid #e9b35d;
+}
+.title-block {
+  padding-top: 140px;
+  margin-bottom: 160px;
+}
+.title-block__button {
+  @media screen and (max-width: 1240px) {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
+.flex-block {
+  display: flex;
+  align-items: center;
+  @media screen and (max-width: 1240px) {
+    flex-direction: column;
+  }
+}
+.title-block__left-column {
+  flex: 1 1 60%;
+}
+.title-block__right-column {
+  display: block;
+  flex: 1 40%;
+}
+.title-block__image {
+  @media screen and (max-width: 1240px) {
+    margin-bottom: 48px;
+  }
+  @media screen and (max-width: 980px) {
+    max-width: 100%;
+    height: auto;
+  }
+}
+.title-block__title-text {
+  margin-bottom: 90px;
+  color: #aa8f5e;
+  font-size: 45px;
+  @media screen and (max-width: 1240px) {
+    text-align: center;
+  }
+}
+
+.text__color_light {
+  color: #e3ad50;
+}
+.text__color_dark {
+  color: #aa8f5e;
+}
+.title-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+  column-gap: 60px;
+  row-gap: 45px;
+  @media screen and (max-width: 1240px) {
+    flex-direction: column;
+  }
+}
+.title-list__item {
+  display: flex;
+}
+.title-list__item-left {
+  flex: 1 1 auto;
+  margin-right: 16px;
+  max-width: 78px;
+}
+.title-list__item-right {
+  flex: 1 1 auto;
+  max-width: 216px;
+  @media screen and (max-width: 1240px) {
+    max-width: 700px;
+  }
+}
+.title-list__item-title {
+  margin-bottom: 12px;
+  font-size: 16px;
+  font-weight: 800;
+  color: #e4ad50;
+  text-transform: uppercase;
+}
+.title-list__item-text {
+  color: #a98e5d;
+  font-weight: 400;
+}
+.pizzas {
+  margin-bottom: 245px;
+}
+.pizzas__title {
+  margin-bottom: 60px;
+  color: #aa8f5e;
+  font-size: 35px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.pizzas__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 24px;
+  @media screen and (max-width: 640px) {
+    justify-content: center;
+  }
+}
+.pizzas__pizza-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 20px 20px;
+  max-width: 282px;
+  flex: 1 1 calc(25% - 24px);
+  box-shadow: 0px 0px 10px -2px #b6b6b6;
+
+  @media screen and (max-width: 1240px) {
+    max-width: calc(33% - 24px);
+    flex: 1 1 auto;
+  }
+
+  @media screen and (max-width: 980px) {
+    max-width: calc(50% - 24px);
+  }
+  @media screen and (max-width: 640px) {
+    max-width: calc(100% - 24px);
+  }
+}
+.pizzas__pizza-image {
+  margin-bottom: 16px;
+  min-height: 152px;
+  cursor: pointer;
+}
+.pizzas__pizza-title {
+  margin-bottom: 13px;
+  font-weight: 700;
+  font-size: 18px;
+}
+.pizzas__pizza-description {
+  margin-bottom: 15px;
+  min-height: 52px;
+  text-align: center;
+  font-size: 14px;
+}
+.pizzas__pizza-button {
+  height: 50px;
+}
+
+.order__inner {
+  display: flex;
+  @media screen and (max-width: 1240px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.order__left-column {
+  display: flex;
+  flex-direction: column;
+  margin-right: 120px;
+  flex: 1 1 auto;
+  max-width: 382px;
+  @media screen and (max-width: 1240px) {
+    max-width: 50%;
+    margin-right: 0;
+  }
+  @media screen and (max-width: 640px) {
+    max-width: 100%;
+  }
+}
+
+.order__middle-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 auto;
+  padding-top: 40px;
+  max-width: 330px;
+}
+.order__right-column {
+  position: relative;
+  flex: 1 1 auto;
+}
+.order__right-image {
+  position: absolute;
+  top: -70px;
+  right: -125px;
+  @media screen and (max-width: 1240px) {
+    position: static;
+    margin-top: 48px;
+  }
+}
+.order__title {
+  margin-bottom: 20px;
+  color: #e4ad50;
+  font-size: 35px;
+  font-weight: 800;
+  @media screen and (max-width: 640px) {
+    text-align: center;
+  }
+}
+.order__subtitle {
+  margin-bottom: 80px;
+  color: #a98f5e;
+  font-size: 35px;
+  font-weight: 800;
+  @media screen and (max-width: 640px) {
+    text-align: center;
+  }
+}
+.order__text {
+  color: #a98f5e;
+  font-size: 16px;
+  font-weight: 400;
+}
+.order__button {
+  width: 100%;
+}
+.order__button:disabled {
+  background-color: #a98e5d;
+  pointer-events: none;
+}

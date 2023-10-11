@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script defer src="./index.js"></script>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner wrapper">
+        <div class="header__logo">
+          <a class="header__logo-link" href="/"
+            ><img
+              class="header__logo-image"
+              src="./images/pizza-logo-svg.svg"
+              alt="logo"
+            />
+            <div class="header__logo-title">PIZZA<br />CHIEFF</div></a
+          >
+        </div>
+        <nav class="header__navigation navigation">
+          <div class="navigation__item">
+            <a class="navigation__link">Пиццы</a>
+          </div>
+          <div class="navigation__item">
+            <a class="navigation__link">Напитки</a>
+          </div>
+          <div class="navigation__item">
+            <a class="navigation__link">Доставка и оплата</a>
+          </div>
+          <div class="navigation__item">
+            <a class="navigation__link">Контакты</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <div class="modal">
+        <div class="modal__inner">
+          <span class="modal__close">&times;</span>
+          <img class="modal__image" />
+        </div>
+      </div>
+      <div class="main__inner wrapper">
+        <div class="main__title-block title-block">
+          <div class="title-block__inner flex-block">
+            <div class="title-block__left-column">
+              <h1 class="title-block__title-text">
+                Самая вкусная пицца в мире <br />
+                <span class="text__color_light">только в Pizza Cheff</span>
+              </h1>
+              <ul class="title-block__list title-list">
+                <li class="title-block__list-item title-list__item">
+                  <div class="title-list__item-left">
+                    <img
+                      class="title-list__item-image"
+                      src="./images/hop.svg"
+                      alt="List image"
+                    />
+                  </div>
+                  <div class="title-list__item-right">
+                    <h2 class="title-list__item-title">Лучшее тесто</h2>
+                    <p class="title-list__item-text">
+                      Мы создаем тесто только из отборной итальянской
+                      мукинаивысшего качества
+                    </p>
+                  </div>
+                </li>
+                <li class="title-block__list-item title-list__item">
+                  <div class="title-list__item-left">
+                    <img
+                      class="title-list__item-image"
+                      src="./images/kitchen-pack.svg"
+                      alt="List image"
+                    />
+                  </div>
+                  <div class="title-list__item-right">
+                    <h2 class="title-list__item-title">Лучшие повара</h2>
+                    <p class="title-list__item-text">
+                      Пиццы готовят самые профессиональные итальянские повара
+                    </p>
+                  </div>
+                </li>
+                <li class="title-block__list-item title-list__item">
+                  <div class="title-list__item-left">
+                    <img
+                      class="title-list__item-image"
+                      src="./images/seo-and-web.svg"
+                      alt="List image"
+                    />
+                  </div>
+                  <div class="title-list__item-right">
+                    <h2 class="title-list__item-title">Гарантия качества</h2>
+                    <p class="title-list__item-text">
+                      Наша пиццерия получила множество наград и признаний по
+                      всему миру
+                    </p>
+                  </div>
+                </li>
+                <li class="title-block__list-item title-list__item">
+                  <div class="title-list__item-left">
+                    <img
+                      class="title-list__item-image"
+                      src="./images/holidays.svg"
+                      alt="List image"
+                    />
+                  </div>
+                  <div class="title-list__item-right">
+                    <h2 class="title-list__item-title">Отборные рецепты</h2>
+                    <p class="title-list__item-text">
+                      Мы используем рецепты от мировых лидеров в изготовлении
+                      пиццы
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="title-block__right-column">
+              <img
+                class="title-block__image"
+                src="./images/pizza_big.jpg"
+                alt="Pizza"
+              />
+            </div>
+          </div>
+
+          <button class="title-block__button">Выбрать пиццу</button>
+        </div>
+        <div class="main__pizzas pizzas">
+          <div class="pizzas__inner">
+            <h2 class="pizzas__title">Выбери свою любимую пиццу</h2>
+            <ul class="pizzas__list">
+              <li class="pizzas__pizza-item">
+                <img
+                  class="pizzas__pizza-image"
+                  src="./images/pizza-deluxe.jpg"
+                  alt="Pizza deluxe"
+                />
+                <h3 class="pizzas__pizza-title">Мясная делюкс</h3>
+                <p class="pizzas__pizza-description">
+                  Пепперони, лук, бекон, томатная паста, колбаски, перец, грибы,
+                  соус чили, ананасы
+                </p>
+                <button class="pizzas__pizza-button">В корзину</button>
+              </li>
+              <li class="pizzas__pizza-item">
+                <img
+                  class="pizzas__pizza-image"
+                  src="./images/pizza-sea-premium.jpg"
+                  alt="Pizza deluxe"
+                />
+                <h3 class="pizzas__pizza-title">Морская Премиум</h3>
+                <p class="pizzas__pizza-description">
+                  Перец, сыр, креветки, кальмары, мидии, лосось
+                </p>
+                <button class="pizzas__pizza-button">В корзину</button>
+              </li>
+              <li class="pizzas__pizza-item">
+                <img
+                  class="pizzas__pizza-image"
+                  src="./images/pizza-becon-sosigue.jpg"
+                  alt="Pizza deluxe"
+                />
+                <h3 class="pizzas__pizza-title">Бекон и Сосиски</h3>
+                <p class="pizzas__pizza-description">
+                  Бекон, сыр, сосиски, ананас, томатная паста
+                </p>
+                <button class="pizzas__pizza-button">В корзину</button>
+              </li>
+              <li class="pizzas__pizza-item">
+                <img
+                  class="pizzas__pizza-image"
+                  src="./images/pizza-chicken-deluxe.jpg"
+                  alt="Pizza deluxe"
+                />
+                <h3 class="pizzas__pizza-title">Куриная Делюкс</h3>
+                <p class="pizzas__pizza-description">
+                  Курица, ананас, сыр Пепперони, соус для пиццы, томатная паста
+                </p>
+                <button class="pizzas__pizza-button">В корзину</button>
+              </li>
+              <li class="pizzas__pizza-item">
+                <img
+                  class="pizzas__pizza-image"
+                  src="./images/pizza-barbeque-premium.jpg"
+                  alt="Pizza deluxe"
+                />
+                <h3 class="pizzas__pizza-title">Барбекю Премиум</h3>
+                <p class="pizzas__pizza-description">
+                  Свинина BBQ, соус Барбкею, сыр, курица, соус для пиццы, соус
+                  чили
+                </p>
+                <button class="pizzas__pizza-button">В корзину</button>
+              </li>
+              <li class="pizzas__pizza-item">
+                <img
+                  class="pizzas__pizza-image"
+                  src="./images/pizza-peperoni-double.jpg"
+                  alt="Pizza deluxe"
+                />
+                <h3 class="pizzas__pizza-title">Пепперони Дабл</h3>
+                <p class="pizzas__pizza-description">
+                  Пепперони, сыр, колбаса 2 видов: обжаренная и вареная
+                </p>
+                <button class="pizzas__pizza-button">В корзину</button>
+              </li>
+              <li class="pizzas__pizza-item">
+                <img
+                  class="pizzas__pizza-image"
+                  src="./images/pizza-chicken-trio.jpg"
+                  alt="Pizza deluxe"
+                />
+                <h3 class="pizzas__pizza-title">Куриное трио</h3>
+                <p class="pizzas__pizza-description">
+                  Жареная курица, Тушеная курица, Куриные наггетсы, перец, сыр,
+                  грибы, соус для пиццы
+                </p>
+                <button class="pizzas__pizza-button">В корзину</button>
+              </li>
+              <li class="pizzas__pizza-item">
+                <img
+                  class="pizzas__pizza-image"
+                  src="./images/pizza-cheese.jpg"
+                  alt="Pizza deluxe"
+                />
+                <h3 class="pizzas__pizza-title">Сырная</h3>
+                <p class="pizzas__pizza-description">
+                  Сыр Джюгас, Сыр с плесенью, Сыр Моцарелла, Сыр секретный
+                </p>
+                <button class="pizzas__pizza-button">В корзину</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="main__order order">
+          <div class="order__inner">
+            <div class="order__left-column">
+              <h3 class="order__title">Хватит думать!</h3>
+              <h4 class="order__subtitle">Доставим заказ за 30 минут!</h4>
+              <p class="order__text">
+                Мы гарантированно доставим вашу пиццу за 30 минут с момента
+                оформления заказа. Если мы опоздаем даже на 1 минуту - вы
+                получаете весь заказ бесплатно и ваучер на скидку на следующий
+                заказ. Мы гордимся нашим сервисом и сделаем всё, чтобы наш
+                клиент был доволен и не остался голодный!
+              </p>
+            </div>
+            <form id="order-form" class="order__middle-column" action="/">
+              <input
+                type="text"
+                class="order__input"
+                placeholder="Ваше имя"
+                required
+                minlength="2"
+                name="name"
+              />
+              <input
+                type="text"
+                class="order__input"
+                placeholder="Адрес доставки"
+                required
+                minlength="4"
+                name="address"
+              />
+              <input
+                type="text"
+                class="order__input"
+                class="order__button"
+                placeholder="Телефон"
+                required
+                minlength="6"
+                pattern="^[\d]+$"
+                name="telephone"
+              />
+              <button class="order__button" type="submit" disabled>
+                Оформить заказ
+              </button>
+            </form>
+            <div class="order__right-column">
+              <img
+                class="order__right-image"
+                src="./images/pizza-slice.jpg"
+                alt="Pizza slice"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

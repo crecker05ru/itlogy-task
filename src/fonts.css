@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "MullerBlack";
+  src: url("./fonts/MullerBlack.woff2");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Muller";
+  src: url("./fonts/MullerRegular.woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Muller";
+  src: url("./fonts/MullerBold.woff2");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Muller";
+  src: url("./fonts/MullerExtraBold.woff2");
+  font-weight: 800;
+}
+
